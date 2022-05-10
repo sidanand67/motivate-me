@@ -23,6 +23,9 @@ async function fetchAPI(){
         .then(response => {
             let result = response.split('\n'); 
             result[1] = result[1].slice(1); 
+            if (result[1] === "null"){
+                result[1] = "Anonymous"; 
+            }
             result[1] = "- " + result[1]; 
             quoteEl.textContent = result[0]; 
             authorEl.textContent = result[1]; 
