@@ -13,12 +13,12 @@
 }
 
 .card{
-    margin: 30px; 
-    border: 1px solid #fff; 
-    border-radius: 10px; 
+    margin: 1rem; 
+    border: 2px dashed #fff; 
+    border-radius: 15px; 
     padding: 30px; 
     background: rgba(0,0,0,0.7); 
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    box-shadow: 0 8px 10px 0 rgba(255, 255, 255, 0.2), 0 15px 30px 0 rgba(255, 255, 255, 0.19);
 }
 
 .quote{
@@ -31,7 +31,13 @@
 
 .author{
     font-family: 'Comfortaa', cursive;
-    font-size: 1.5rem; 
+    font-size: 1.7rem; 
     text-align: center;
-    color: red; 
+    color: yellow; 
+}
+
+@media all and (max-width:480px){
+    html{
+        font-size: 14px; 
+    }
 }
